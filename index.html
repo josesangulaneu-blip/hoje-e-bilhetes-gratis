@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HOJE É BILHETES GRÁTIS</title>
+<style>
+body{margin:0;background:#0b0d10;color:#fff;font-family:Arial,sans-serif}
+header{text-align:center;padding:28px 15px;background:#151922}h1{margin:0;font-size:28px}.sub{color:#aeb7c4}
+main{max-width:760px;margin:auto;padding:18px}.btn{display:block;text-align:center;text-decoration:none;padding:15px;border-radius:12px;font-weight:bold;margin:10px 0}
+.reg{background:#22c55e;color:#061008}.wa{background:#128c7e;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card,.notice{background:#15181d;border:1px solid #2b3038;border-radius:15px;padding:15px}
+.code{background:#090b0e;padding:13px;border-radius:9px;text-align:center;font-weight:bold;font-size:20px;margin:12px 0;word-break:break-all}
+.copy{width:100%;padding:11px;border:0;border-radius:9px;font-weight:bold}.tag{color:#aeb7c4;font-size:12px}
+footer{text-align:center;color:#8993a1;font-size:12px;padding:25px}
+</style></head><body>
+<header><h1>🎟️ HOJE É BILHETES GRÁTIS</h1><p class="sub">Olabet Tiket • Bilhetes atualizados diariamente</p></header>
+<main>
+<a class="btn reg" href="https://tracking.olabet.co.mz/C.ashx?btag=a_5346b_24c_&affid=5145&siteid=5346&adid=24&c=" target="_blank" rel="noopener">🔥 REGISTAR NA OLABET</a>
+<a class="btn wa" href="https://wa.me/258857853752?text=Olá%2C%20preciso%20de%20ajuda%20com%20os%20bilhetes." target="_blank" rel="noopener">💬 SUPORTE PELO WHATSAPP</a>
+<div class="notice"><b>📅 Bilhetes de hoje</b><br>Os códigos são atualizados diariamente. Copia o código que pretendes usar.</div>
+<section class="grid" id="tickets"></section>
+<div class="notice"><b>⚠️ Aviso:</b> apostas envolvem risco financeiro. Os bilhetes/códigos não garantem ganhos. Aposte apenas se tiver idade legal e de acordo com as regras aplicáveis.</div>
+</main><footer>HOJE É BILHETES GRÁTIS • Olabet Tiket</footer>
+<script>
+const tickets=[
+["Bilhete de 10 odds","COLOQUE-CODIGO-01"],["Bilhete de 10 odds","COLOQUE-CODIGO-02"],["Bilhete de 10 odds","COLOQUE-CODIGO-03"],
+["Bilhete de 50 odds","COLOQUE-CODIGO-04"],["Bilhete de 50 odds","COLOQUE-CODIGO-05"],["Bilhete de 50 odds","COLOQUE-CODIGO-06"],
+["Bilhete de 100 odds","COLOQUE-CODIGO-07"],["Bilhete de 100 odds","COLOQUE-CODIGO-08"],["Bilhete de 100 odds","COLOQUE-CODIGO-09"],
+["Comboio","COLOQUE-CODIGO-10"]];
+const box=document.querySelector("#tickets");
+tickets.forEach((t,i)=>box.innerHTML+=`<article class="card"><span class="tag">Bilhete ${i+1}</span><h3>${t[0]}</h3><div class="code" id="c${i}">${t[1]}</div><button class="copy" onclick="copyCode(${i})">📋 Copiar código</button></article>`);
+function copyCode(i){navigator.clipboard.writeText(tickets[i][1]).then(()=>alert("Código copiado!")).catch(()=>alert("Copia manualmente o código."))}
+</script></body></html>
